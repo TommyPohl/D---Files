@@ -1,0 +1,3 @@
+Ahoj
+Tento text je jiný.
+Tento text je stejný.
