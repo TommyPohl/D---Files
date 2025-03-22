@@ -17,7 +17,7 @@
 
 compare_files("text1.txt", "text2.txt")
 """
-
+"""
 def remove_last_line(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -28,5 +28,15 @@ def remove_last_line(input_file, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         f.writelines(lines)
 
-# Použití:
+
 remove_last_line("input.txt", "output.txt")
+"""
+
+def longest_line_length(file):
+    with open(file, 'r', encoding='utf-8') as f:
+        max_length = max(len(line.rstrip()) for line in f)
+
+    print(f"The longest line length is: {max_length}")
+
+
+longest_line_length("input.txt")
