@@ -1,4 +1,4 @@
-def compare_files(file1, file2):
+"""def compare_files(file1, file2):
     with open(file1, 'r', encoding='utf-8') as f1, open(file2, 'r', encoding='utf-8') as f2:
         lines1 = f1.readlines()
         lines2 = f2.readlines()
@@ -16,3 +16,17 @@ def compare_files(file1, file2):
             print("-" * 30)
 
 compare_files("text1.txt", "text2.txt")
+"""
+
+def remove_last_line(input_file, output_file):
+    with open(input_file, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    if lines:
+        lines = lines[:-1]
+
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.writelines(lines)
+
+# Použití:
+remove_last_line("input.txt", "output.txt")

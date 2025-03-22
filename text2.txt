@@ -1,3 +1,2 @@
 Ahoj
-Tento text je jiný.
-Tento text je stejný.
+Tento text je odlišný.
